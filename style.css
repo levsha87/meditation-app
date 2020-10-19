@@ -66,6 +66,12 @@
   flex: 1;
 }
 
+.player-container .play{
+padding-top: 100px;
+}
+.player-container .replay {
+  padding-bottom: 80px;
+}
 .player-container svg {
   position: absolute;
   height: 50%;
