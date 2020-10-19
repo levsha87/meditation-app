@@ -14,8 +14,8 @@ let fakeDuration = 600;
 
 outline.style.strokeDashoffset = outlineLength;
 outline.style.strokeDasharray = outlineLength;
-timeDisplay.textContent = `${Math.floor(fakeDuration / 60)}:${Math.floor(
-  fakeDuration % 60
+timeDisplay.textContent = `${Math.floor(fakeDuration / 60)}:${plusZero(Math.floor(
+  fakeDuration % 60)
 )}`;
 
 sounds.forEach(sound => {
@@ -46,8 +46,8 @@ const restartSong = song =>{
 timeSelect.forEach(option => {
   option.addEventListener("click", function() {
     fakeDuration = this.getAttribute("data-time");
-    timeDisplay.textContent = `${Math.floor(fakeDuration / 60)}:${Math.floor(
-      fakeDuration % 60
+    timeDisplay.textContent = `${Math.floor(fakeDuration / 60)}:${plusZero(Math.floor(
+      fakeDuration % 60)
     )}`;
   });
 });
@@ -63,11 +63,16 @@ const checkPlaying = song => {
     play.src = "./svg/play.svg";
   }
 };
+function plusZero(n){
+  return (parseInt(n, 10)<10 ? "0" : "") + n;
+}
 
 song.ontimeupdate = function() {
   let currentTime = song.currentTime;
   let elapsed = fakeDuration - currentTime;
-  let seconds = Math.floor(elapsed % 60);
+  let seconds = plusZero(Math.floor(elapsed % 60));
+  
+  
   let minutes = Math.floor(elapsed / 60);
   timeDisplay.textContent = `${minutes}:${seconds}`;
   let progress = outlineLength - (currentTime / fakeDuration) * outlineLength;
