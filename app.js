@@ -5,6 +5,7 @@ const outline = document.querySelector(".moving-outline circle");
 const video = document.querySelector(".vid-container video");
 //Sounds
 const sounds = document.querySelectorAll(".sound-picker button");
+console.log(sounds);
 //Time Display
 const timeDisplay = document.querySelector(".time-display");
 const outlineLength = outline.getTotalLength();
@@ -26,6 +27,8 @@ sounds.forEach(sound => {
   });
 });
 
+
+
 play.addEventListener("click", function() {
   checkPlaying(song);
 });
@@ -37,7 +40,6 @@ replay.addEventListener("click", function() {
 
 
 const restartSong = song =>{
-    let currentTime = song.currentTime;
     song.currentTime = 0;
     console.log("ciao")
 
