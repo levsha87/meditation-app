@@ -57,7 +57,7 @@ const checkPlaying = song => {
   } else {
     song.pause();
     video.pause();
-    play.src = "./svg/play.previousSibling";
+    play.src = "./svg/play.svg";
   }
 };
 
@@ -65,12 +65,12 @@ function plusZero (n) {
   return (parseInt(n, 10) < 10 ? "0" : "") + n;
 }
 
-song.timeRunning = function () {
+song.ontimeupdate  = function () {
   let currentTime = song.currentTime;
   let timePassed = timeDuration - currentTime;
   let seconds = plusZero(Math.floor(timePassed % 60));
 
-  let minuts = Math.floor(timeDuration / 60);
+  let minuts = Math.floor(timePassed / 60);
   timeDisplay.textContent  = `${minuts}:${seconds}`;
   let progress = outlineLength * (1- currentTime/timeDuration);
   outline.style.strokeDashoffset = progress;
