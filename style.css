@@ -88,7 +88,7 @@ i:active {
   border-color: gray;
   box-shadow: none;
 }
-.right {
+.arrow-right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
