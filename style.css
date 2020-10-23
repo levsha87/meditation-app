@@ -143,3 +143,217 @@ video {
   width: 100%;
   z-index: -10;
 }
+@media only screen and (max-width: 1020px){
+  .app {
+    height:90vh;
+   
+  }
+  button {
+    outline: none;
+  }
+  
+  .time-select,
+  .sound-picker {
+    height: 80%;
+    
+  }
+  .time-select button,
+  .sound-picker button {
+    width: 30%;
+    height: 10%;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .sound-picker button {
+    height: 90px;
+    width: 90px;
+    padding: 15px;
+    border-radius: 50%;
+  }
+  
+  .sound-picker button img {
+    height: 90%;
+  }
+  
+  
+  .player-container {
+    height: 60%;
+  }
+  
+  i {
+    top: 48%;
+    right: 5%;
+  }
+  
+  .player-container .play{
+    position: absolute;
+    height: 15%;
+    top: 43%;
+    left: 42%;
+    
+  }
+  .player-container .replay {
+    height: 15%;
+    bottom: 0;
+    left: 43%;
+  }
+
+    
+  .player-container svg {
+    height: 50%;
+    top: 50%;
+    left: 50%;
+  }
+  
+  .time-display {
+    font-size: 30px;
+    top: 10%;
+    opacity: 80%;
+  }
+  
+}
+@media only screen and (max-width: 860px){
+  .app {
+    height:75vh;
+   
+  }
+  button {
+    outline: none;
+  }
+  
+  .time-select,
+  .sound-picker {
+    height: 80%;
+    
+  }
+  .time-select button,
+  .sound-picker button {
+    width: 30%;
+    height: 7%;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+  
+  .sound-picker button {
+    height: 70px;
+    width: 70px;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  .sound-picker button img {
+    height: 90%;
+  }
+  
+  
+  .player-container {
+    height: 50%;
+  }
+  
+  i {
+    top: 46%;
+    right: 7%;
+    border-width: 0 6px 6px 0;
+  }
+  
+  .player-container .play{
+    position: absolute;
+    height: 12%;
+    top: 43%;
+    left: 45%;
+    
+  }
+  .player-container .replay {
+    height: 12%;
+    bottom: 0;
+    bottom:15%;
+    left: 46%;
+  }
+
+    
+  .player-container svg {
+    height: 40%;
+    top: 50%;
+    left: 50%;
+  }
+  
+  .time-display {
+    font-size: 25px;
+    top: 10%;
+    opacity: 80%;
+  }
+  
+}
+@media only screen and (max-width: 760px){
+  .app {
+    height:65vh;
+   
+  }
+  button {
+    outline: none;
+  }
+  
+  .time-select,
+  .sound-picker {
+    height: 80%;
+    
+  }
+  .time-select button,
+  .sound-picker button {
+    width: 30%;
+    height: 7%;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+  
+  .sound-picker button {
+    height: 70px;
+    width: 70px;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  .sound-picker button img {
+    height: 90%;
+  }
+  
+  
+  .player-container {
+    height: 50%;
+  }
+  
+  i {
+    top: 44%;
+    right: 10%;
+    border-width: 0 4px 4px 0;
+  }
+  
+  .player-container .play{
+    position: absolute;
+    height: 12%;
+    top: 43%;
+    left: 45%;
+    
+  }
+  .player-container .replay {
+    height: 12%;
+    bottom: 0;
+    bottom:15%;
+    left: 46%;
+  }
+
+    
+  .player-container svg {
+    height: 40%;
+    top: 50%;
+    left: 50%;
+  }
+  
+  .time-display {
+    font-size: 25px;
+    top: 10%;
+    opacity: 80%;
+  }
+  
+}

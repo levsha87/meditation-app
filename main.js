@@ -97,8 +97,6 @@ arrowRight.addEventListener("click", function () {
   if (timeDuration - currentTime < 10) {
     song.currentTime = timeDuration;
     currentTime = song.currentTime;
-    displayProgress(currentTime);
-    getCurrentTime(currentTime);
 
   } else {
     song.currentTime += 10;
