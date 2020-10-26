@@ -80,6 +80,18 @@ i {
   opacity: 50%;
   cursor: pointer;
 }
+i.arrow-right.right {
+  border: solid white;
+  border-width: 0 9px 9px 0;
+  display: inline-block;
+  padding: 9px;
+  position: absolute;
+  top: 48%;
+  right: 0;
+  opacity: 50%;
+  cursor: pointer;
+}
+
 i:hover{
 box-shadow: 2px 2px 3px white;
 }
@@ -91,6 +103,17 @@ i:active {
 .arrow-right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+}
+
+.player-container .forward {
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  color: whitesmoke;
+  position: absolute;
+  top: 60%;
+  right: 0;
+  opacity: 70%;
 }
 
 .player-container .play{
@@ -175,17 +198,21 @@ video {
   .sound-picker button img {
     height: 90%;
   }
-  
-  
+    
   .player-container {
     height: 60%;
   }
   
   i {
     top: 48%;
-    right: 5%;
+    right: 7%;
   }
   
+  i.arrow-right.right {
+    top: 48%;
+    right: 0;
+  }
+
   .player-container .play{
     position: absolute;
     height: 15%;
@@ -193,6 +220,13 @@ video {
     left: 42%;
     
   }
+
+  .player-container .forward {
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+  }
+
   .player-container .replay {
     height: 15%;
     bottom: 0;
@@ -257,6 +291,19 @@ video {
     border-width: 0 6px 6px 0;
   }
   
+  i.arrow-right.right {
+    top: 46%;
+    right: 2%;
+    border-width: 0 6px 6px 0;
+  }
+
+  .player-container .forward {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    right: 7%;
+  }
+
   .player-container .play{
     position: absolute;
     height: 12%;
@@ -270,7 +317,6 @@ video {
     bottom:15%;
     left: 46%;
   }
-
     
   .player-container svg {
     height: 40%;
@@ -303,7 +349,7 @@ video {
   .sound-picker button {
     width: 30%;
     height: 7%;
-    font-size: 14px;
+    font-size: 12px;
     border-radius: 5px;
   }
   
@@ -317,17 +363,24 @@ video {
   .sound-picker button img {
     height: 90%;
   }
-  
-  
+    
   .player-container {
     height: 50%;
   }
   
   i {
-    top: 44%;
+    top: 46%;
     right: 10%;
     border-width: 0 4px 4px 0;
+    padding: 4px;
   }
+
+  i.arrow-right.right {
+    top: 46%;
+    right: 6%;
+    border-width: 0 4px 4px 0;
+    padding: 4px;
+  }  
   
   .player-container .play{
     position: absolute;
@@ -342,7 +395,6 @@ video {
     bottom:15%;
     left: 46%;
   }
-
     
   .player-container svg {
     height: 40%;

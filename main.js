@@ -3,8 +3,7 @@ const song = document.querySelector('.song'),
   play = document.querySelector('.play'),
   replay = document.querySelector('.replay'),
   outline = document.querySelector('.moving-outline circle'),
-  arrowRight = document.querySelector('.arrow-right');
-console.log(arrowRight);
+  forwardRight = document.querySelector('.forward-right');
 
 //Sounds
 const sounds = document.querySelectorAll('.sound-picker button');
@@ -95,7 +94,7 @@ function displayProgress() {
   outline.style.strokeDashoffset = progress;
 }
 
-arrowRight.addEventListener('click', function () {
+forwardRight.addEventListener('click', function () {
   if (timeDuration - currentTime < 10) {
     song.currentTime = timeDuration;
     currentTime = song.currentTime;
